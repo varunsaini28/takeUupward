@@ -1,0 +1,21 @@
+# Environment variables
+.env
+**/.env
+
+# Firebase
+firebase-service-account.json
+**/firebase-service-account.json
+
+# Node
+node_modules/
+
+# Next.js
+.next/
+
+# Go binaries
+*.exe
+*.out
+
+# OS
+.DS_Store
+Thumbs.db
