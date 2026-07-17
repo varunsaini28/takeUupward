@@ -459,7 +459,7 @@ function QuestionSet({ mode }: { mode: 'practice' | 'quiz' }) {
 
 /* ---------------- Module 11 page ---------------- */
 
-export default function Module11Page({ view }: { view: ViewType }) {
+export default function Module11Page({ view = 'notes' }: { view?: ViewType }) {
   return (
     <div>
       <div className="mb-6">
