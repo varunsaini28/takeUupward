@@ -295,7 +295,7 @@ function QuestionSet({ mode }: { mode: 'practice' | 'quiz' }) {
   };
 
   const answeredCount = selected.filter((s) => s !== null).length;
-  const score = selected.reduce((acc, s, i) => (s === questions[i].answer ? acc + 1 : acc), 0);
+  const score = selected.reduce((acc: number, s, i) => (s === questions[i].answer ? acc + 1 : acc), 0);
   const showFeedback = (qIndex: number) => (mode === 'practice' ? selected[qIndex] !== null : submitted);
 
   return (
